@@ -27,7 +27,7 @@ document.querySelectorAll(".btn-whatsapp").forEach(btn => {
     e.preventDefault();
 
     const producto = btn.getAttribute("data-producto");
-    const mensaje = `Hola, estoy interesado en el reloj ${producto}. ¿Podrían darme más información?`;
+    const mensaje = `Hola, estoy interesado en el reloj ${producto}. ¿Podría darme más información?`;
     const url = `https://wa.me/${telefonoWhatsApp}?text=${encodeURIComponent(mensaje)}`;
 
     window.open(url, "_blank");
