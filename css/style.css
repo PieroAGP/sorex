@@ -143,7 +143,6 @@ footer {
   text-align: center;
 }
 
-
 /* ===== Sección Contacto ===== */
 .contacto-section {
   background-color: #000;
@@ -289,16 +288,16 @@ footer {
   font-size: 1rem;
 }
 
-
+/* ===== Sección Productos ===== */
 #productos {
-  background-color: #000;          
+  background-color: #000;
   color: #fff;
   padding: 100px 0;
-  text-align: center; /* Todo centrado */
+  text-align: center;
 }
 
 #productos h2 {
-  color: #FFD700;                  
+  color: #FFD700;
   font-size: 2.8rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -309,21 +308,28 @@ footer {
 /* Contenedor de cada producto */
 .product-block {
   margin-bottom: 100px;
-  text-align: center; /* Centrar contenido */
+  text-align: center;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #FFD966; /* Línea fina y amarillo suave */
+}
+
+/* Último producto sin línea */
+.product-block:last-child {
+  border-bottom: none;
 }
 
 /* ===== Carrusel ===== */
 .carousel-inner img {
   border-radius: 15px;
-  border: 2px solid #222;          
-  max-width: 90%;       /* Más pequeñas */
+  border: 2px solid #222;
+  max-width: 90%;
   height: auto;
-  margin: 0 auto;       /* Centrar imagen */
+  margin: 0 auto;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-  background-color: #222;          
+  background-color: #222;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -335,60 +341,82 @@ footer {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  filter: invert(100%);            
+  filter: invert(100%);
 }
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
-  background-color: #FFD700;       
+  background-color: #FFD700;
   opacity: 1;
 }
 
 .carousel-control-prev:hover .carousel-control-prev-icon,
 .carousel-control-next:hover .carousel-control-next-icon {
-  filter: invert(0%);              
+  filter: invert(0%);
 }
 
 /* ===== Textos de producto ===== */
 .product-block h3 {
-  color: #fff;                     
+  color: #fff;
   font-size: 1.9rem;
   font-weight: 600;
   margin-bottom: 15px;
 }
 
 .product-block p {
-  color: #fff;                      /* Más blancas */
+  color: #f5f5f5; /* Más blancas */
+  max-width: 500px; /* Limitar ancho */
+  margin: 0 auto 20px;
   font-size: 1.05rem;
   line-height: 1.7;
 }
 
-/* ===== Botón WhatsApp ===== */
+/* ===== Botón WhatsApp más grande ===== */
 .btn-whatsapp {
-  background-color: #000;          
-  color: #FFD700;                  
+  background-color: #000;
+  color: #FFD700;
   border: 2px solid #FFD700;
   border-radius: 50px;
-  padding: 12px 25px;
+  padding: 15px 35px;
   font-weight: 600;
   display: inline-flex;
   align-items: center;
   gap: 10px;
   text-decoration: none;
   transition: all 0.3s ease;
-  justify-content: center; /* Centrar contenido */
+  justify-content: center;
+  font-size: 1.1rem;
 }
 
 .btn-whatsapp img {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
 }
 
 .btn-whatsapp:hover {
-  background-color: #FFD700;       
-  color: #000;                     
+  background-color: #FFD700;
+  color: #000;
   border-color: #FFD700;
   transform: translateY(-3px);
+}
+
+/* ===== Alinear todo el contenido de la sección productos al centro ===== */
+#productos .row {
+  justify-content: center;
+}
+
+#productos .col-lg-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===== Fuente y estilo bienvenida ===== */
+.bienvenida {
+  font-family: 'Story Script', cursive;
+  font-size: 4rem;
+  color: #fff;
+  text-align: center;
 }
 
 /* ===== Responsividad ===== */
@@ -406,58 +434,7 @@ footer {
     width: 40px;
     height: 40px;
   }
-}
 
-/* ===== Separador dorado entre productos ===== */
-.product-block {
-  margin-bottom: 100px;
-  text-align: center; /* Centrar contenido */
-  padding-bottom: 50px;
-  border-bottom: 2px solid #FFD700; /* Línea dorada */
-}
-
-/* Último producto sin línea */
-.product-block:last-child {
-  border-bottom: none;
-}
-
-/* ===== Botón WhatsApp más grande ===== */
-.btn-whatsapp {
-  padding: 15px 35px; /* Más grande */
-  font-size: 1.1rem;  /* Texto más grande */
-}
-
-.btn-whatsapp img {
-  width: 28px;  /* Icono más grande */
-  height: 28px;
-}
-
-/* ===== Alinear todo el contenido de la sección productos al centro ===== */
-#productos .row {
-  justify-content: center;
-}
-
-#productos .col-lg-6 {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centrar texto y botones */
-}
-
-/* ===== Descripción más blanca ===== */
-.product-block p {
-  color: #f5f5f5; /* Más blanca que antes */
-  max-width: 500px; /* Limitar ancho para mejor lectura */
-  margin: 0 auto 20px;
-}
-
-.bienvenida {
-  font-family: 'Story Script', cursive;
-  font-size: 4rem; /* Ajusta tamaño según necesites */
-  color: #fff;
-  text-align: center;
-}
-
-@media (max-width: 768px) {
   .bienvenida {
     font-size: 2.5rem;
   }
