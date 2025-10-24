@@ -1,0 +1,408 @@
+/* ===== Fuente global ===== */
+body {
+  font-family: 'Titillium Web', sans-serif;
+  padding-top: 56px; /* Compensa navbar fijo */
+  color: #fff;
+}
+
+/* ====== HERO VIDEO ====== */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  z-index: 1;
+}
+
+/* Texto del video en recuadro */
+.video-text-box {
+  display: inline-block;
+  background-color: rgba(0,0,0,0.6);
+  padding: 20px 40px;
+  border-radius: 15px;
+}
+
+/* ===== Navbar ===== */
+.cper {
+  background-color: #000;
+}
+
+.tmna {
+  width: 150px;
+  height: 70px;
+}
+
+/* ===== Sección Historia ===== */
+#historia {
+  background-color: #121212;
+  color: #fff;
+  padding: 100px 0;
+}
+
+#historia h2 {
+  color: #FFD700;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.destacado-periodico {
+  background-color: rgba(255, 215, 0, 0.1);
+  color: #FFD700;
+  font-style: italic;
+  font-weight: 500;
+  padding: 20px 25px;
+  border-left: 5px solid #FFD700;
+  border-radius: 5px;
+  margin: 40px auto;
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(255,215,0,0.2);
+}
+
+/* ===== Sección Valores ===== */
+#valores {
+  background-color: #121212;
+  color: #fff;
+  padding: 100px 0;
+}
+
+#valores h2 {
+  color: #FFD700;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 60px;
+}
+
+/* Cards */
+#valores .card {
+  background-color: #191919;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#valores .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+}
+
+#valores .card-title {
+  color: #FFD700;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* Ajuste tamaño imágenes valores */
+#valores .card-img-top {
+  padding-top: 15px;
+  max-width: 80px;
+  max-height: 80px;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+
+/* ===== Sección Contacto ===== */
+.contacto-section {
+  background-color: #000;
+  color: #fff;
+  padding: 120px 0 100px;
+  text-align: center;
+}
+
+.titulo-contacto {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.titulo-contacto .blanco {
+  color: #fff;
+}
+
+.titulo-contacto .amarillo {
+  color: #FFD700;
+}
+
+.subtitulo {
+  color: #ccc;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.descripcion {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+/* Card principal */
+.contacto-card {
+  background-color: #111;
+  border-radius: 15px;
+  padding: 40px;
+  max-width: 700px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.15);
+}
+
+.contacto-card .titulo-card {
+  background-color: #FFD700;
+  color: #000;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 50px;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.contacto-card .texto-card {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+/* Mini cards */
+.mini-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 35px;
+}
+
+.mini-card {
+  background-color: #191919;
+  border-radius: 10px;
+  padding: 10px 15px;
+  color: #FFD700;
+  font-weight: 500;
+  font-size: 0.95rem;
+  width: 220px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mini-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.25);
+}
+
+.icono-mini {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+/* Botón WhatsApp */
+.btn-contacto {
+  background-color: #25D366;
+  color: #fff;
+  border-radius: 50px;
+  padding: 12px 25px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-contacto:hover {
+  background-color: #1ebe5d;
+  transform: translateY(-3px);
+}
+
+.icono-boton {
+  width: 24px;
+  height: 24px;
+}
+
+/* Card secundaria */
+.garantia-card {
+  background-color: #111;
+  border-radius: 15px;
+  padding: 40px;
+  max-width: 600px;
+  margin: 60px auto 0;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.15);
+}
+
+.icono-garantia {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.titulo-garantia {
+  color: #FFD700;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.texto-garantia {
+  color: #ddd;
+  font-size: 1rem;
+}
+
+
+#productos {
+  background-color: #000;          
+  color: #fff;
+  padding: 100px 0;
+  text-align: center; /* Todo centrado */
+}
+
+#productos h2 {
+  color: #FFD700;                  
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 60px;
+}
+
+/* Contenedor de cada producto */
+.product-block {
+  margin-bottom: 100px;
+  text-align: center; /* Centrar contenido */
+}
+
+/* ===== Carrusel ===== */
+.carousel-inner img {
+  border-radius: 15px;
+  border: 2px solid #222;          
+  max-width: 90%;       /* Más pequeñas */
+  height: auto;
+  margin: 0 auto;       /* Centrar imagen */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #222;          
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);            
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: #FFD700;       
+  opacity: 1;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  filter: invert(0%);              
+}
+
+/* ===== Textos de producto ===== */
+.product-block h3 {
+  color: #fff;                     
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.product-block p {
+  color: #fff;                      /* Más blancas */
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* ===== Botón WhatsApp ===== */
+.btn-whatsapp {
+  background-color: #000;          
+  color: #FFD700;                  
+  border: 2px solid #FFD700;
+  border-radius: 50px;
+  padding: 12px 25px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  justify-content: center; /* Centrar contenido */
+}
+
+.btn-whatsapp img {
+  width: 24px;
+  height: 24px;
+}
+
+.btn-whatsapp:hover {
+  background-color: #FFD700;       
+  color: #000;                     
+  border-color: #FFD700;
+  transform: translateY(-3px);
+}
+
+/* ===== Responsividad ===== */
+@media (max-width: 768px) {
+  #productos h2 {
+    font-size: 2rem;
+  }
+
+  .btn-whatsapp {
+    width: 100%;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 40px;
+    height: 40px;
+  }
+}
