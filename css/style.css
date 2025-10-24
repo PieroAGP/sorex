@@ -1,5 +1,6 @@
 /* ===== Fuente global ===== */
 body {
+  background-color: #000;
   font-family: 'Titillium Web', sans-serif;
   padding-top: 56px; /* Compensa navbar fijo */
   color: #fff;
